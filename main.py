@@ -8,7 +8,7 @@ todoMap = {}
 
 class HelloWorld(Resource):
     def get(self):
-        return {'hello': 'python world!'}
+        return {'hello': 'python world1!'}
 
 
 class TodoSimple(Resource):
@@ -23,6 +23,7 @@ class TodoSimple(Resource):
 class Echo(Resource):
     def get(self, msg):
         return {'reply': msg}
+
 
 api.add_resource(HelloWorld, '/')
 api.add_resource(TodoSimple, '/<string:todo_id>')
